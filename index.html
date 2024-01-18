@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" ></script>
+	<title>Fitness Coach</title>
+</head>
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="navbar">
+				<a href="#" class="logo">Fitness</a>
+				<div class="hamburger toggle-button">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+				<div class="navbar-link">
+					<ul>
+						<li><a href="#" data-scroll="#">Главная</a></li>
+						<li><a href="#" data-scroll="#">Преимущества</a></li>
+						<li><a href="#" data-scroll="#">Абонементы</a></li>
+						<li><a href="#" data-scroll="#">Акция</a></li>
+						<li><a href="#" data-scroll="#">Тренеры</a></li>
+						<li><a href="#" data-scroll="#">Расписание</a></li>
+						<li><a href="#" data-scroll="#">Контакты</a></li>
+
+
+						<div class="header__tel header__tel-active">
+					<a href="tel:+71231234567" class="header__tel-num">+7 123 123-45-67</a>
+					<a class="btn js-open-modal" data-modal="4" href="#">Заказать звонок</a>
+					<div class="modal" data-modal="4">
+						<span class="js-modal-close close">&times;</span>
+					   <div class="modal__content">
+					   	    <h3 class="modal__title">Заказать звонок</h3>
+					   	    <p class="modal__text">Введите данные для заказа обратного звонка</p>
+					   	    <form action="/">
+					   	    	<label for="name" class="form__label">Имя</label>
+							    <input type="name" placeholder="Ваше Имя" class="form__input form__input-pop" name="name">
+							    <label for="name" class="form__label">Ваш телефон</label>
+							    <input type="number" name="number" class="form__input form__input-pop" placeholder="Введите Ваш телефон">
+							    <div class="checkbox">
+									<input class="checkbox__input" type="checkbox" id="checkbox_1">
+	            					<label class="checkbox__label" for="checkbox_1">Я согласен на обработку моих <a href="#">персональных данных</a></label>
+								</div>
+							    <button class="form__btn form__btn-pop" type="button">Отправить</button>
+						    </form>
+					   </div>
+					</div>
+					<div class="overlay js-overlay-modal"></div>
+					</div>
+
+					</ul>
+				</div>
+				<div class="header__tel">
+					<a href="tel:+71231234567" class="header__tel-num">+7 123 123-45-67</a>
+					<a class="btn js-open-modal" data-modal="1" href="#">Заказать звонок</a>
+					<div class="modal" data-modal="1">
+						<span class="js-modal-close close">&times;</span>
+					   <div class="modal__content">
+					   	    <h3 class="modal__title">Заказать звонок</h3>
+					   	    <p class="modal__text">Введите данные для заказа обратного звонка</p>
+					   	    <form action="/">
+					   	    	<label for="name" class="form__label">Имя</label>
+							    <input type="name" placeholder="Ваше Имя" class="form__input form__input-pop" name="name">
+							    <label for="name" class="form__label">Ваш телефон</label>
+							    <input type="number" name="number" class="form__input form__input-pop" placeholder="Введите Ваш телефон">
+							    <div class="checkbox">
+									<input class="checkbox__input" type="checkbox" id="checkbox_2">
+	            					<label class="checkbox__label" for="checkbox_2">Я согласен на обработку моих <a href="#">персональных данных</a></label>
+								</div>
+							    <button class="form__btn form__btn-pop" type="button">Отправить</button>
+						    </form>
+					   </div>
+					</div>
+					<div class="overlay js-overlay-modal"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="intro">
+		<div class="container">
+			<div class="intro__item">
+				<h1 class="intro__title animation">Занимайтесь фитнесом с тренером онлайн</h1>
+				<p class="intro__text animation">Выберите тренера, запланируйте занятие и начните заниматься по видеозвонку в удобное время и месте</p>
+				<button class="btn js-open-modal" data-modal="2" type="button">Попробовать бесплатно</button>
+				<div class="modal" data-modal="2">
+						<span class="js-modal-close close">&times;</span>
+					   <div class="modal__content">
+					   	    <h3 class="modal__title">Заказать звонок</h3>
+					   	    <p class="modal__text">Введите данные для заказа обратного звонка</p>
+					   	    <form action="/">
+					   	    	<label for="name" class="form__label">Имя</label>
+							    <input type="name" placeholder="Ваше Имя" class="form__input form__input-pop" name="name">
+							    <label for="name" class="form__label">Ваш телефон</label>
+							    <input type="number" name="number" class="form__input form__input-pop" placeholder="Введите Ваш телефон">
+							    <div class="checkbox">
+									<input class="checkbox__input" type="checkbox" id="checkbox_3">
+	            					<label class="checkbox__label" for="checkbox_3">Я согласен на обработку моих <a href="#">персональных данных</a></label>
+								</div>
+							    <button class="form__btn form__btn-pop" type="button">Отправить</button>
+						    </form>
+					   </div>
+					</div>
+				<button class="btn btn--min  js-open-modal" data-modal="3" type="button">Абонементы</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="section section-advantages">
+		<div class="container">
+			<div class="advantages animation">
+				<div class="advantages__item">
+					<div class="advantages__inner">
+						<div class="advantages__icon">
+							<img src="images/place.svg" alt="">
+						</div>
+						<div class="advantages__content">
+							<h3 class="advantages__title">В любом месте</h3>
+							<p class="advantages__text">Дома, в гостях, за городом, в фитнес клубе</p>
+						</div>
+					</div>
+				</div>
+				<div class="advantages__item">
+					<div class="advantages__inner">
+						<div class="advantages__icon">
+							<img src="images/time.svg" alt="">
+						</div>
+						<div class="advantages__content">
+							<h3 class="advantages__title">В любое время</h3>
+							<p class="advantages__text">Работаем во всех часовых поясах</p>
+						</div>
+					</div>
+				</div>
+				<div class="advantages__item">
+					<div class="advantages__inner">
+						<div class="advantages__icon">
+							<img src="images/mobile.svg" alt="">
+						</div>
+						<div class="advantages__content">
+							<h3 class="advantages__title">С любого устройства</h3>
+							<p class="advantages__text">Подойдет смартфон, планшет, ноутбук</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="section section-bg">
+		<div class="container">
+			<div class="section__header">
+				<h2 class="section__title animation">Абонементы</h2>
+				<p class="section__text animation">После оплаты с вами свяжется менеджер и подберет для вас тренера.</p>
+			</div>
+			<div class="season">
+				<div class="season__item">
+					<div class="season__inner">
+						<h3 class="season__title">Silver</h3>
+						<ul class="season__link">
+							<li>1 тренировка</li>
+							<li>Подберем для вас тренера</li>
+							<li>Тренировка в удобное время</li>
+						</ul>
+						<div class="season__num">390 ₽</div>
+						<p class="season__text">1 тренировка</p>
+						<button class="btn btn--big js-open-modal" data-modal="4" type="button">Хочу тренироваться</button>
+					</div>
+				</div>
+				<div class="season__item">
+					<div class="season__inner">
+						<h3 class="season__title">Gold</h3>
+						<ul class="season__link">
+							<li>12 тренировок</li>
+							<li>Тренировка 50 минут</li>
+							<li>Есть тренер-куратор</li>
+							<li>Личный чат с тренером</li>
+							<li>Срок истечения 45 дней</li>
+						</ul>
+						<div class="season__num">5 990 ₽</div>
+						<p class="season__text">1 месяц</p>
+						<button class="btn btn--big" type="button">Хочу тренироваться</button>
+					</div>
+				</div>
+				<div class="season__item">
+					<div class="season__inner">
+						<h3 class="season__title">Premium</h3>
+						<ul class="season__link">
+							<li>24 тренировок</li>
+							<li>Тренировка 50 минут</li>
+							<li>Есть тренер-куратор</li>
+							<li>Личный чат с тренером</li>
+							<li>Срок истечения 90 дней</li>
+						</ul>
+						<div class="season__num">8 990 ₽</div>
+						<p class="season__text">2 месяца</p>
+						<button class="btn btn--big" type="button">Хочу тренироваться</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="section section-subscription">
+		<div class="container">
+			<div class="subscription">
+				<div class="subscription__item">
+					<div class="subscription__content">
+						<h2 class="subscription__title animation">Попробуйте бесплатно абонемент <span>Subscription</span></h2>
+						<p class="subscription__text animation">Введите данные для подачи заявки до окончания акции</p>
+					</div>
+				</div>
+				<div class="subscription__item">
+					<form class="form-subscription" action="/">
+					   	    <label for="name" class="form__label">Имя</label>
+							<input type="name" placeholder="Ваше Имя" class="form__input form__input-pop" name="name">
+							<label for="name" class="form__label">Ваш телефон</label>
+							<input type="number" name="number" class="form__input form__input-pop" placeholder="Введите Ваш телефон">
+							<div class="checkbox">
+								<input class="checkbox__input" type="checkbox" id="checkbox_5">
+            					<label class="checkbox__label" for="checkbox_5">Я согласен на обработку моих <a href="#">персональных данных</a></label>
+							</div>
+							<button class="form__btn form__btn-pop" type="button">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="section section-bg">
+		<div class="container">	
+			<div class="section__header">
+				<h2 class="section__title animation">Профессионалы мира фитнеса</h2>
+			</div>
+			<div class="trainers">
+				<div class="trainers__item">
+					<div class="trainers__inner">
+						<img src="images/coaches-1.jpg" alt="" class="trainers__img">
+						<div class="trainers__content">
+							<h3 class="trainers__name">Ковалева Наталья</h3>
+							<h4 class="trainers__prof">Силовые и кардио тренировки</h4>
+							<button class="btn" type="button">Хочу тренироваться</button>
+						</div>
+					</div>
+				</div>
+				<div class="trainers__item">
+					<div class="trainers__inner">
+						<img src="images/coaches-2.jpg" alt="" class="trainers__img">
+						<div class="trainers__content">
+							<h3 class="trainers__name">Ковалева Наталья</h3>
+							<h4 class="trainers__prof">Силовые и кардио тренировки</h4>
+							<button class="btn" type="button">Хочу тренироваться</button>
+						</div>
+					</div>
+				</div>
+				<div class="trainers__item">
+					<div class="trainers__inner">
+						<img src="images/coaches-3.jpg" alt="" class="trainers__img">
+						<div class="trainers__content">
+							<h3 class="trainers__name">Ковалева Наталья</h3>
+							<h4 class="trainers__prof">Силовые и кардио тренировки</h4>
+							<button class="btn" type="button">Хочу тренироваться</button>
+						</div>
+					</div>
+				</div>
+				<div class="trainers__item">
+					<div class="trainers__inner">
+						<img src="images/coaches-4.jpg" alt="" class="trainers__img">
+						<div class="trainers__content">
+							<h3 class="trainers__name">Ковалева Наталья</h3>
+							<h4 class="trainers__prof">Силовые и кардио тренировки</h4>
+							<button class="btn" type="button">Хочу тренироваться</button>
+						</div>
+					</div>
+				</div>
+				<div class="trainers__item">
+					<div class="trainers__inner">
+						<img src="images/coaches-5.jpg" alt="" class="trainers__img">
+						<div class="trainers__content">
+							<h3 class="trainers__name">Ковалева Наталья</h3>
+							<h4 class="trainers__prof">Силовые и кардио тренировки</h4>
+							<button class="btn" type="button">Хочу тренироваться</button>
+						</div>
+					</div>
+				</div>
+				<div class="trainers__item">
+					<div class="trainers__inner">
+						<img src="images/coaches-6.jpg" alt="" class="trainers__img">
+						<div class="trainers__content">
+							<h3 class="trainers__name">Ковалева Наталья</h3>
+							<h4 class="trainers__prof">Силовые и кардио тренировки</h4>
+							<button class="btn" type="button">Хочу тренироваться</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section-schedule">
+		<div class="container">
+			<div class="section__header">
+				<h2 class="section__titlte section__title-cl animation">Удобное расписание</h2>
+				<p class="section__text section__text-cl animation">Каждый день имеет сбалансированное распределение тренировочных программ.</p>
+			</div>
+			<div class="schedule">
+				<div class="schedule__item">
+					<div class="schedule__inner">
+						<h3 class="schedule__date">Понедельник</h3>
+						<ul class="schedule__list">
+							<li>Силовая тренировка</li>
+							<li>Табата</li>
+							<li>Stretch</li>
+						</ul>
+					</div>
+				</div>
+				<div class="schedule__item">
+					<div class="schedule__inner">
+						<h3 class="schedule__date">Вторник</h3>
+						<ul class="schedule__list">
+							<li>Круговая тренировка</li>
+							<li>Band Training</li>
+							<li>ABS Stretch</li>
+						</ul>
+					</div>
+				</div>
+				<div class="schedule__item">
+					<div class="schedule__inner">
+						<h3 class="schedule__date">Среда</h3>
+						<ul class="schedule__list">
+							<li>Силовая тренировка</li>
+							<li>Booty Training</li>
+							<li>Stretch</li>
+						</ul>
+					</div>
+				</div>
+				<div class="schedule__item">
+					<div class="schedule__inner">
+						<h3 class="schedule__date">Четверг</h3>
+						<ul class="schedule__list">
+							<li>Функциональная тренировка</li>
+							<li>Band Training</li>
+							<li>ABS Stretch</li>
+						</ul>
+					</div>
+				</div>
+				<div class="schedule__item">
+					<div class="schedule__inner">
+						<h3 class="schedule__date">Пятница</h3>
+						<ul class="schedule__list">
+							<li>Силовая тренировка</li>
+							<li>Табата</li>
+							<li>Stretch</li>
+						</ul>
+					</div>
+				</div>
+				<div class="schedule__item">
+					<div class="schedule__inner">
+						<h3 class="schedule__date">Суббота</h3>
+						<ul class="schedule__list">
+							<li>Кардио тренировка</li>
+							<li>Booty Training</li>
+							<li>ABS Stretch</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="section section-contact">
+		<div class="container">
+			<div class="contact">
+				<div class="contact__item animation">
+					<form action="/">
+						<h2 class="form__title">Бесплатное занятие</h2>
+						<p class="form__text">Запланируйте занятие и начните заниматься по видеозвонку</p>
+						<form action="/">
+					   	    <label for="name" class="form__label">Имя</label>
+							<input type="name" placeholder="Ваше Имя" class="form__input form__input-pop" name="name">
+							<label for="name" class="form__label">Ваш телефон</label>
+							<input type="number" name="number" class="form__input form__input-pop" placeholder="Введите Ваш телефон">
+							<div class="checkbox">
+								<input class="checkbox__input" type="checkbox" id="checkbox_6">
+            					<label class="checkbox__label" for="checkbox_6">Я согласен на обработку моих <a href="#">персональных данных</a></label>
+							</div>
+							<button class="form__btn form__btn-pop" type="button">Отправить</button>
+					</form>
+				</div>
+				<div class="contact__item contact__info">
+					<h2 class="content__title">Контакты</h2>
+					<div class="contact__address">Москва, Ленинский проспект, 151, офис 711</div>
+					<div class="contact__address">Время работы: 10:00-19:00 Пн-Пт</div>
+					<a href="tel:+71231234567" class="contact__tel">
+						Россия (бесплатный звонок)
+						<span>+7 123 123-45-67</span>
+					</a>
+					<a href="email:support@megagroup.ru" class="contact__email">support@megagroup.ru</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+
+</body>
+</html>
