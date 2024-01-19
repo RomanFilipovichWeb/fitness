@@ -881,7 +881,7 @@ a {
     .navbar-link {
         display: none;
         width: 100%;
-        height: auto;
+        height: 60vh;
     }
 
     .navbar-link ul {
